@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 24% 95%;
+    --foreground: 0 0% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+    --primary: 0 0% 17%;
+    --primary-foreground: 40 24% 95%;
+    --secondary: 160 20% 93%;
+    --secondary-foreground: 0 0% 17%;
+    --muted: 40 15% 90%;
+    --muted-foreground: 37 8% 41%;
+    --accent: 43 62% 57%;
+    --accent-foreground: 0 0% 17%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 17% / 0.08;
+    --input: 0 0% 17% / 0.08;
+    --ring: 43 62% 57%;
+    --radius: 1.75rem;
+    
+    /* Custom brand colors */
+    --tlc-cream: #F6F3EE;
+    --tlc-mint: #E9F3F1;
+    --tlc-gold: #D8A94B;
+    --tlc-dark: #2B2B2B;
+    --tlc-gray: #6E6A63;
+    --tlc-green: #4A7C59;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  body {
+    @apply bg-[#F6F3EE] text-[#2B2B2B] antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+  
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer components {
+  .text-card-glass {
+    background: rgba(246, 243, 238, 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 32px;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-sm transition-all duration-300;
+    background: var(--tlc-gold);
+    color: var(--tlc-dark);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(216, 169, 75, 0.35);
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-sm transition-all duration-300 border-2;
+    border-color: var(--tlc-dark);
+    color: var(--tlc-dark);
+    background: transparent;
+  }
+  
+  .btn-secondary:hover {
+    background: var(--tlc-dark);
+    color: var(--tlc-cream);
+  }
+  
+  .grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.06;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+  
+  .section-pinned {
+    @apply w-screen h-screen overflow-hidden relative;
+  }
+  
+  .ingredient-chip {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border-[1.5px] border-[#2B2B2B] transition-all duration-300;
+  }
+  
+  .ingredient-chip:hover {
+    background: var(--tlc-gold);
+    border-color: var(--tlc-gold);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
