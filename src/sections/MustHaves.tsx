@@ -7,105 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const amazonProducts = [
   {
-    name: 'SpotOn GPS Dog Fence Collar',
-    category: 'Safety',
-    url: 'https://amzn.to/4atS30l',
-    description: 'Wireless GPS boundary for your yard',
-    price: '$999.00',
-    rating: 4.3,
-    reviews: 2847,
-    image: 'https://m.media-amazon.com/images/P/B0D1KZ9P93.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Wireless Electric Dog Fence',
-    category: 'Training',
-    url: 'https://amzn.to/4tfw98H',
-    description: 'Remote control training collar system',
-    price: '$89.99',
-    rating: 4.1,
-    reviews: 5231,
-    image: 'https://m.media-amazon.com/images/P/B0FZ9P4BGS.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Furbo 360° Dog Camera',
-    category: 'Tech',
-    url: 'https://amzn.to/4kd8ul4',
-    description: 'Pet cam with treat toss & barking alerts',
-    price: '$199.00',
-    rating: 4.4,
-    reviews: 8932,
-    image: 'https://m.media-amazon.com/images/P/B09GDQZLD1.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'FFIJJ Dog Couch Sofa Bed',
-    category: 'Comfort',
-    url: 'https://amzn.to/3Mg6Z94',
-    description: 'Velvet pet sofa for large/medium dogs',
-    price: '$149.99',
-    rating: 4.5,
-    reviews: 3421,
-    image: 'https://m.media-amazon.com/images/P/B0F543K416.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Pedigree Dentastix',
-    category: 'Dental',
-    url: 'https://amzn.to/4qVCR1Q',
-    description: 'Oral care treats, reduces plaque & tartar',
-    price: '$18.99',
-    rating: 4.7,
-    reviews: 21560,
-    image: 'https://m.media-amazon.com/images/P/B078J116XT.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Omega 3 Fish Oil for Dogs',
-    category: 'Health',
-    url: 'https://amzn.to/4qf2xFG',
-    description: 'Liquid supplement for skin, coat & joints',
-    price: '$24.95',
-    rating: 4.6,
-    reviews: 6789,
-    image: 'https://m.media-amazon.com/images/P/B09TBPJYJ8.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Chuckit! Ultra Ball 2-Pack',
-    category: 'Toys',
-    url: 'https://amzn.to/4qcjDUv',
-    description: 'Durable, bouncy balls that float',
-    price: '$8.99',
-    rating: 4.8,
-    reviews: 45210,
-    image: 'https://m.media-amazon.com/images/P/B000F4AVPA.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Amazon Basics Dog Poop Bags',
-    category: 'Walking',
-    url: 'https://amzn.to/3NWN8fJ',
-    description: '600 count leakproof bags with dispenser',
-    price: '$15.49',
-    rating: 4.6,
-    reviews: 138920,
-    image: 'https://m.media-amazon.com/images/P/B00NABTG60.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
-    name: 'Benebone Dog Chew Toys 4-Pack',
-    category: 'Toys',
-    url: 'https://amzn.to/4ke3htb',
-    description: 'Made in USA for aggressive chewers',
-    price: '$34.99',
-    rating: 4.5,
-    reviews: 15678,
-    image: 'https://m.media-amazon.com/images/P/B09DJBK648.01._SCLZZZZZZZ_SL500_.jpg',
-    prime: true
-  },
-  {
     name: 'Chris Christensen Big G Slicker Brush',
     category: 'Grooming',
     url: 'https://amzn.to/4r0MXia',
@@ -113,7 +14,7 @@ const amazonProducts = [
     price: '$89.95',
     rating: 4.9,
     reviews: 8234,
-    image: 'https://m.media-amazon.com/images/P/B00KAJQJ74.01._SCLZZZZZZZ_SL500_.jpg',
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B00KAJQJ74.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -124,7 +25,106 @@ const amazonProducts = [
     price: '$169.99',
     rating: 4.6,
     reviews: 9234,
-    image: 'https://m.media-amazon.com/images/P/B00EVBXI5S.01._SCLZZZZZZZ_SL500_.jpg',
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B00EVBXI5S.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Furbo 360° Dog Camera',
+    category: 'Tech',
+    url: 'https://amzn.to/4kd8ul4',
+    description: 'Pet cam with treat toss & barking alerts',
+    price: '$199.00',
+    rating: 4.4,
+    reviews: 8932,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B09GDQZLD1.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Benebone Dog Chew Toys 4-Pack',
+    category: 'Toys',
+    url: 'https://amzn.to/4ke3htb',
+    description: 'Made in USA for aggressive chewers',
+    price: '$34.99',
+    rating: 4.5,
+    reviews: 15678,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B09DJBK648.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Pedigree Dentastix',
+    category: 'Dental',
+    url: 'https://amzn.to/4qVCR1Q',
+    description: 'Oral care treats, reduces plaque & tartar',
+    price: '$18.99',
+    rating: 4.7,
+    reviews: 21560,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B078J116XT.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Chuckit! Ultra Ball 2-Pack',
+    category: 'Toys',
+    url: 'https://amzn.to/4qcjDUv',
+    description: 'Durable, bouncy balls that float',
+    price: '$8.99',
+    rating: 4.8,
+    reviews: 45210,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B000F4AVPA.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Amazon Basics Dog Poop Bags',
+    category: 'Walking',
+    url: 'https://amzn.to/3NWN8fJ',
+    description: '600 count leakproof bags with dispenser',
+    price: '$15.49',
+    rating: 4.6,
+    reviews: 138920,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B00NABTG60.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Omega 3 Fish Oil for Dogs',
+    category: 'Health',
+    url: 'https://amzn.to/4qf2xFG',
+    description: 'Liquid supplement for skin, coat & joints',
+    price: '$24.95',
+    rating: 4.6,
+    reviews: 6789,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B09TBPJYJ8.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'SpotOn GPS Dog Fence Collar',
+    category: 'Safety',
+    url: 'https://amzn.to/4atS30l',
+    description: 'Wireless GPS boundary for your yard',
+    price: '$999.00',
+    rating: 4.3,
+    reviews: 2847,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B0D1KZ9P93.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'FFIJJ Dog Couch Sofa Bed',
+    category: 'Comfort',
+    url: 'https://amzn.to/3Mg6Z94',
+    description: 'Velvet pet sofa for large/medium dogs',
+    price: '$149.99',
+    rating: 4.5,
+    reviews: 3421,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B0F543K416.01._SCLZZZZZZZ_SL500_.jpg',
+    prime: true
+  },
+  {
+    name: 'Wireless Electric Dog Fence',
+    category: 'Training',
+    url: 'https://amzn.to/4tfw98H',
+    description: 'Remote control training collar system',
+    price: '$89.99',
+    rating: 4.1,
+    reviews: 5231,
+    image: 'https://images-na.ssl-images-amazon.com/images/P/B0FZ9P4BGS.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
 ];
