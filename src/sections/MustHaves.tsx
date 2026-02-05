@@ -14,7 +14,7 @@ const amazonProducts = [
     price: '$999.00',
     rating: 4.3,
     reviews: 2847,
-    image: 'https://m.media-amazon.com/images/I/71YFq1lGKZL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B0D1KZ9P93.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -25,7 +25,7 @@ const amazonProducts = [
     price: '$89.99',
     rating: 4.1,
     reviews: 5231,
-    image: 'https://m.media-amazon.com/images/I/71qhX-3xKIL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B0FZ9P4BGS.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -36,7 +36,7 @@ const amazonProducts = [
     price: '$199.00',
     rating: 4.4,
     reviews: 8932,
-    image: 'https://m.media-amazon.com/images/I/71zjN2j2SqL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B09GDQZLD1.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -47,7 +47,7 @@ const amazonProducts = [
     price: '$149.99',
     rating: 4.5,
     reviews: 3421,
-    image: 'https://m.media-amazon.com/images/I/71vF5KVp0vL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B0F543K416.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -58,7 +58,7 @@ const amazonProducts = [
     price: '$18.99',
     rating: 4.7,
     reviews: 21560,
-    image: 'https://m.media-amazon.com/images/I/81G3TrNXs5L._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B078J116XT.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -69,7 +69,7 @@ const amazonProducts = [
     price: '$24.95',
     rating: 4.6,
     reviews: 6789,
-    image: 'https://m.media-amazon.com/images/I/71sOzy+i-vL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B09TBPJYJ8.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -80,7 +80,7 @@ const amazonProducts = [
     price: '$8.99',
     rating: 4.8,
     reviews: 45210,
-    image: 'https://m.media-amazon.com/images/I/71KdRq8Z-LL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B000F4AVPA.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -91,7 +91,7 @@ const amazonProducts = [
     price: '$15.49',
     rating: 4.6,
     reviews: 138920,
-    image: 'https://m.media-amazon.com/images/I/71nHjZ2K7eL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B00NABTG60.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -102,7 +102,7 @@ const amazonProducts = [
     price: '$34.99',
     rating: 4.5,
     reviews: 15678,
-    image: 'https://m.media-amazon.com/images/I/71tMm6bBoKL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B09DJBK648.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -113,7 +113,7 @@ const amazonProducts = [
     price: '$89.95',
     rating: 4.9,
     reviews: 8234,
-    image: 'https://m.media-amazon.com/images/I/71CQ+j0YDPL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B00KAJQJ74.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
   {
@@ -124,7 +124,7 @@ const amazonProducts = [
     price: '$169.99',
     rating: 4.6,
     reviews: 9234,
-    image: 'https://m.media-amazon.com/images/I/718q-QoEbyL._AC_SL1500_.jpg',
+    image: 'https://m.media-amazon.com/images/P/B00EVBXI5S.01._SCLZZZZZZZ_SL500_.jpg',
     prime: true
   },
 ];
