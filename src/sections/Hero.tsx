@@ -123,7 +123,7 @@ export default function Hero() {
         style={{ opacity: 0 }}
       >
         <img 
-          src="/images/hero-goldendoodle.jpg" 
+          src="images/hero-goldendoodle.jpg" 
           alt="Happy Goldendoodle"
           className="w-full h-full object-cover object-center"
         />
