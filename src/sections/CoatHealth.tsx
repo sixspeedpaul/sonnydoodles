@@ -88,7 +88,7 @@ export default function CoatHealth() {
       {/* Background Image */}
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="/images/doodle-blanket-up.jpg" 
+          src="images/doodle-blanket-up.jpg" 
           alt="Goldendoodle looking up"
           className="w-full h-full object-cover"
         />

@@ -79,7 +79,7 @@ export default function MeetDoodles() {
       {/* Background Image */}
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="/images/doodle-lying.jpg" 
+          src="images/doodle-lying.jpg" 
           alt="Goldendoodle lying down"
           className="w-full h-full object-cover"
         />

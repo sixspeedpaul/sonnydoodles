@@ -79,7 +79,7 @@ export default function Contact() {
             {/* Logo */}
             <div className="mb-6">
               <img 
-                src="/images/logo.png" 
+                src="images/logo.png" 
                 alt="Sonny Doodles"
                 className="h-20 w-auto"
               />
@@ -186,7 +186,7 @@ export default function Contact() {
             {/* Logo & Tagline */}
             <div className="flex items-center gap-4">
               <img 
-                src="/images/logo.png" 
+                src="images/logo.png" 
                 alt="Sonny Doodles"
                 className="h-14 w-auto"
               />

@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-4 text-center md:text-left">
             <img 
-              src="/images/logo.png" 
+              src="images/logo.png" 
               alt="Sonny Doodles on Fifth"
               className="h-14 md:h-16 w-auto brightness-0 invert"
             />

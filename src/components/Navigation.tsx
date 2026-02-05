@@ -52,7 +52,7 @@ export default function Navigation() {
             className="flex items-center gap-2 md:gap-3"
           >
             <img 
-              src="/images/logo.png" 
+              src="images/logo.png" 
               alt="Sonny Doodles on Fifth"
               className="h-10 md:h-12 w-auto"
             />
@@ -112,7 +112,7 @@ export default function Navigation() {
       >
         <div className="flex flex-col items-center justify-center h-full gap-6 md:gap-8 px-6">
           <img 
-            src="/images/logo.png" 
+            src="images/logo.png" 
             alt="Sonny Doodles on Fifth"
             className="h-16 md:h-24 w-auto mb-2"
           />

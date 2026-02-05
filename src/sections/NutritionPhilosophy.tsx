@@ -81,7 +81,7 @@ export default function NutritionPhilosophy() {
       {/* Background Image */}
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="/images/doodle-blanket.jpg" 
+          src="images/doodle-blanket.jpg" 
           alt="Goldendoodle on blanket"
           className="w-full h-full object-cover"
         />
