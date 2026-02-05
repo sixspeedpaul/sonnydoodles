@@ -91,7 +91,7 @@ export default function IngredientsSpotlight() {
       {/* Background Image */}
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="images/doodle-couch.jpg" 
+          src="/images/doodle-couch.jpg" 
           alt="Goldendoodle on couch"
           className="w-full h-full object-cover"
         />

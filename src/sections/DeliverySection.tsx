@@ -86,7 +86,7 @@ export default function DeliverySection() {
       {/* Background Image */}
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="images/doodle-sofa-close.jpg" 
+          src="/images/doodle-sofa-close.jpg" 
           alt="Goldendoodle on sofa"
           className="w-full h-full object-cover"
         />

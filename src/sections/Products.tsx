@@ -19,7 +19,7 @@ const products = [
       'Herbal immune support',
     ],
     popular: true,
-    image: 'images/puppy-feature.jpg'
+    image: '/images/puppy-feature.jpg'
   },
   {
     name: 'Whole Life Puppy Food',
@@ -34,7 +34,7 @@ const products = [
       'Smaller kibble size',
     ],
     popular: false,
-    image: 'images/dog-eating.jpg'
+    image: '/images/dog-eating.jpg'
   },
   {
     name: 'Grain-Free Formula',
@@ -49,7 +49,7 @@ const products = [
       'Hypoallergenic recipe',
     ],
     popular: false,
-    image: 'images/doodle-blanket.jpg'
+    image: '/images/doodle-blanket.jpg'
   },
 ];
 
