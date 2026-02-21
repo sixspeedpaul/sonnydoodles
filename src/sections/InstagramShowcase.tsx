@@ -9,48 +9,59 @@ const INSTAGRAM_PROFILE_URL = 'https://www.instagram.com/sonnydoodlesonfifth/';
 
 const instagramPosts = [
   {
-    image: '/images/doodle-grass.jpg',
-    alt: 'Goldendoodle playing outside on grass',
-    caption: 'Fresh-air zoomies and sunshine.',
-    likes: '1.3K',
-    comments: '42'
+    shortcode: 'C_GD47Yur3i',
+    image: 'https://www.instagram.com/p/C_GD47Yur3i/media/?size=l',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: 'What SUP?',
+    likes: 13,
+    comments: 0
   },
   {
-    image: '/images/doodle-couch.jpg',
-    alt: 'Goldendoodle sitting comfortably on a couch',
-    caption: 'Couch cuddles after a long walk.',
-    likes: '987',
-    comments: '31'
+    shortcode: 'C2TEZglJ8S0',
+    image: 'https://www.instagram.com/p/C2TEZglJ8S0/media/?size=l',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: 'Umm, can you move your stuff off "my" bench?',
+    likes: 10,
+    comments: 0
   },
   {
-    image: '/images/doodle-blanket.jpg',
-    alt: 'Goldendoodle resting on a cozy blanket',
-    caption: 'Soft coat, cozy blanket, zero stress.',
-    likes: '1.1K',
-    comments: '27'
+    shortcode: 'C1RvJv1OOIJ',
+    image: 'https://www.instagram.com/p/C1RvJv1OOIJ/media/?size=l',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: 'Merry Christmas!',
+    likes: 20,
+    comments: 2
   },
   {
-    image: '/images/doodle-sofa-close.jpg',
-    alt: 'Close-up of a goldendoodle on a sofa',
-    caption: 'The face that gets extra treats.',
-    likes: '1.5K',
-    comments: '56'
+    shortcode: 'CzRVhbgLM38',
+    image: 'https://www.instagram.com/p/CzRVhbgLM38/media/?size=l',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: "When you're trying to pose for a wholesome family photo...",
+    likes: 21,
+    comments: 0
   },
   {
-    image: '/images/dog-eating.jpg',
-    alt: 'Goldendoodle eating from a bowl',
-    caption: 'Mealtime energy, tail in overdrive.',
-    likes: '864',
-    comments: '19'
+    shortcode: 'CzPx8vqLv5z',
+    image: 'https://www.instagram.com/p/CzPx8vqLv5z/media/?size=l',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: 'No place in the world is id rather beach.',
+    likes: 10,
+    comments: 0
   },
   {
-    image: '/images/doodle-blanket-up.jpg',
-    alt: 'Goldendoodle peeking up from a blanket',
-    caption: 'Weekend mode: blanket burrito.',
-    likes: '1.2K',
-    comments: '38'
+    shortcode: 'Ct1bDDsOjXh',
+    image: 'https://www.instagram.com/p/Ct1bDDsOjXh/media/?size=l',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: "One of Sonny's last litters going home on July 7th.",
+    likes: 18,
+    comments: 1
   },
 ];
+
+function formatCount(value: number) {
+  if (value >= 1000) return `${(value / 1000).toFixed(1)}K`;
+  return `${value}`;
+}
 
 export default function InstagramShowcase() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -179,8 +190,8 @@ export default function InstagramShowcase() {
         <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
           {instagramPosts.map((post, idx) => (
             <a
-              key={idx}
-              href={INSTAGRAM_PROFILE_URL}
+              key={post.shortcode}
+              href={`https://www.instagram.com/p/${post.shortcode}/`}
               target="_blank"
               rel="noopener noreferrer"
               className={`group rounded-[24px] overflow-hidden border border-[#2B2B2B]/10 bg-white/85 backdrop-blur-sm shadow-[0_14px_30px_rgba(43,43,43,0.08)] hover:shadow-[0_22px_48px_rgba(43,43,43,0.14)] transition-all duration-300 hover:-translate-y-1 ${
@@ -204,7 +215,11 @@ export default function InstagramShowcase() {
                 alt={post.alt}
                 loading="lazy"
                 decoding="async"
+                referrerPolicy="no-referrer"
                 className="w-full aspect-[4/5] object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/images/doodle-grass.jpg';
+                }}
               />
 
               <div className="p-3.5">
@@ -212,11 +227,11 @@ export default function InstagramShowcase() {
                 <div className="mt-3 flex items-center gap-4 text-xs text-[#6E6A63]">
                   <span className="inline-flex items-center gap-1">
                     <Heart className="w-3.5 h-3.5 text-[#D8A94B]" />
-                    {post.likes}
+                    {formatCount(post.likes)}
                   </span>
                   <span className="inline-flex items-center gap-1">
                     <MessageCircle className="w-3.5 h-3.5 text-[#4A7C59]" />
-                    {post.comments}
+                    {formatCount(post.comments)}
                   </span>
                 </div>
               </div>
