@@ -10,7 +10,7 @@ const INSTAGRAM_PROFILE_URL = 'https://www.instagram.com/sonnydoodlesonfifth/';
 const instagramPosts = [
   {
     shortcode: 'C_GD47Yur3i',
-    image: 'https://www.instagram.com/p/C_GD47Yur3i/media/?size=l',
+    image: '/images/instagram/C_GD47Yur3i.jpg',
     alt: 'Instagram post by Sonny Doodles On Fifth',
     caption: 'What SUP?',
     likes: 13,
@@ -18,7 +18,7 @@ const instagramPosts = [
   },
   {
     shortcode: 'C2TEZglJ8S0',
-    image: 'https://www.instagram.com/p/C2TEZglJ8S0/media/?size=l',
+    image: '/images/instagram/C2TEZglJ8S0.jpg',
     alt: 'Instagram post by Sonny Doodles On Fifth',
     caption: 'Umm, can you move your stuff off "my" bench?',
     likes: 10,
@@ -26,34 +26,34 @@ const instagramPosts = [
   },
   {
     shortcode: 'C1RvJv1OOIJ',
-    image: 'https://www.instagram.com/p/C1RvJv1OOIJ/media/?size=l',
+    image: '/images/instagram/C1RvJv1OOIJ.jpg',
     alt: 'Instagram post by Sonny Doodles On Fifth',
     caption: 'Merry Christmas!',
     likes: 20,
     comments: 2
   },
   {
-    shortcode: 'CzRVhbgLM38',
-    image: 'https://www.instagram.com/p/CzRVhbgLM38/media/?size=l',
-    alt: 'Instagram post by Sonny Doodles On Fifth',
-    caption: "When you're trying to pose for a wholesome family photo...",
-    likes: 21,
-    comments: 0
-  },
-  {
     shortcode: 'CzPx8vqLv5z',
-    image: 'https://www.instagram.com/p/CzPx8vqLv5z/media/?size=l',
+    image: '/images/instagram/CzPx8vqLv5z.jpg',
     alt: 'Instagram post by Sonny Doodles On Fifth',
     caption: 'No place in the world is id rather beach.',
     likes: 10,
     comments: 0
   },
   {
-    shortcode: 'Ct1bDDsOjXh',
-    image: 'https://www.instagram.com/p/Ct1bDDsOjXh/media/?size=l',
+    shortcode: 'CsgfTgGO_Yl',
+    image: '/images/instagram/CsgfTgGO_Yl.jpg',
     alt: 'Instagram post by Sonny Doodles On Fifth',
-    caption: "One of Sonny's last litters going home on July 7th.",
-    likes: 18,
+    caption: "Sonny's a father again! Congrats Charlie!",
+    likes: 20,
+    comments: 2
+  },
+  {
+    shortcode: 'CsSEtY9JOC_',
+    image: '/images/instagram/CsSEtY9JOC_.jpg',
+    alt: 'Instagram post by Sonny Doodles On Fifth',
+    caption: "Look at me, I'm on a boat.",
+    likes: 20,
     comments: 1
   },
 ];
@@ -215,7 +215,6 @@ export default function InstagramShowcase() {
                 alt={post.alt}
                 loading="lazy"
                 decoding="async"
-                referrerPolicy="no-referrer"
                 className="w-full aspect-[4/5] object-cover group-hover:scale-[1.02] transition-transform duration-300"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/images/doodle-grass.jpg';
