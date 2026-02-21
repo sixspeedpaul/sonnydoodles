@@ -12,6 +12,7 @@ import ComparisonTable from './sections/ComparisonTable';
 import DeliverySection from './sections/DeliverySection';
 import CoatHealth from './sections/CoatHealth';
 import Testimonials from './sections/Testimonials';
+import InstagramShowcase from './sections/InstagramShowcase';
 import FAQ from './sections/FAQ';
 import MustHaves from './sections/MustHaves';
 import Footer from './sections/Footer';
@@ -116,6 +117,7 @@ function App() {
         <DeliverySection />
         <CoatHealth />
         <Testimonials />
+        <InstagramShowcase />
         <FAQ />
         <MustHaves />
         <Footer />
