@@ -1,3 +1,19 @@
+# Sonny Doodles Website
+
+## Google Analytics 4 setup
+
+1. In GA4 Admin, create or choose a Web Data Stream and copy the Measurement ID (format: `G-XXXXXXXXXX`).
+2. Create a local `.env` file in the project root.
+3. Add:
+
+```bash
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+4. Deploy to GitHub Pages after setting the same value as a GitHub Actions secret/variable in your repo settings.
+
+If `VITE_GA_MEASUREMENT_ID` is missing, analytics stays disabled automatically.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
