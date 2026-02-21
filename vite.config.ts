@@ -5,10 +5,10 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 import prerender from '@prerenderer/rollup-plugin'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   base: '/',
   plugins: [
-    inspectAttr(),
+    ...(command === 'serve' ? [inspectAttr()] : []),
     react(),
     prerender({
       routes: ['/'],
@@ -23,4 +23,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+}));
