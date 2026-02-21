@@ -200,9 +200,13 @@ export default function InstagramShowcase() {
             >
               <div className="flex items-center gap-3 px-3.5 py-3 border-b border-[#2B2B2B]/8">
                 <div className="h-8 w-8 rounded-full p-[1px] bg-gradient-to-br from-[#D8A94B] via-[#D8A94B]/80 to-[#4A7C59]">
-                  <div className="h-full w-full rounded-full bg-white flex items-center justify-center text-[10px] font-bold text-[#2B2B2B]">
-                    SD
-                  </div>
+                  <img
+                    src="/images/logo-transparent.png"
+                    alt="Sonny Doodles on Fifth logo"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full rounded-full object-contain bg-white p-[1px]"
+                  />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#2B2B2B] leading-none">sonnydoodlesonfifth</p>

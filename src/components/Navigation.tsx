@@ -56,12 +56,12 @@ export default function Navigation() {
             className="flex items-center gap-2 md:gap-3"
           >
             <img 
-              src="/images/logo.png" 
+              src="/images/logo-transparent.png" 
               alt="Sonny Doodles on Fifth"
               width={900}
               height={900}
               fetchPriority="high"
-              className="h-10 md:h-12 w-auto"
+              className="h-10 md:h-12 w-auto object-contain"
             />
             <span className={`font-bold text-sm md:text-lg transition-colors hidden sm:block ${isScrolled ? 'text-[#2B2B2B]' : 'text-[#2B2B2B]'}`}>
               Sonny Doodles on Fifth
@@ -119,13 +119,13 @@ export default function Navigation() {
       >
         <div className="flex flex-col items-center justify-center h-full gap-6 md:gap-8 px-6">
           <img 
-            src="/images/logo.png" 
+            src="/images/logo-transparent.png" 
             alt="Sonny Doodles on Fifth"
             width={900}
             height={900}
             loading="lazy"
             decoding="async"
-            className="h-16 md:h-24 w-auto mb-2"
+            className="h-16 md:h-24 w-auto object-contain mb-2"
           />
           <p className="font-bold text-lg md:text-xl text-[#2B2B2B]">Sonny Doodles on Fifth</p>
           <div className="w-full max-w-xs space-y-1">
