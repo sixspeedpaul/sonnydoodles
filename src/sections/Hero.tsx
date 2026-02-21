@@ -165,6 +165,21 @@ export default function Hero() {
             TLC Pet Food delivers nutrition-dense, filler-free recipes that keep your goldendoodle thriving—from their coat to their digestive health.
           </p>
 
+          <p className="text-xs md:text-sm text-[#6E6A63] mb-4 md:mb-6">
+            Compare options:
+            {' '}
+            <a href="#comparison" className="underline underline-offset-4 text-[#4A7C59] hover:text-[#D8A94B] transition-colors">
+              TLC vs Orijen vs Acana
+            </a>
+            {' '}
+            or jump to the
+            {' '}
+            <a href="#faq" className="underline underline-offset-4 text-[#4A7C59] hover:text-[#D8A94B] transition-colors">
+              Goldendoodle FAQ
+            </a>
+            .
+          </p>
+
           {/* Benefit Badges */}
           <div ref={badgesRef} className="flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
             <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-white/80 backdrop-blur-sm rounded-full border border-[#2B2B2B]/10">

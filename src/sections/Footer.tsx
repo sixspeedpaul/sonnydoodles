@@ -103,6 +103,16 @@ export default function Footer() {
                 Testimonials
               </a>
               <a
+                href="#comparison"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('comparison')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="text-xs md:text-sm text-white/60 hover:text-[#D8A94B] transition-colors"
+              >
+                TLC vs Orijen vs Acana
+              </a>
+              <a
                 href="#faq"
                 onClick={(e) => {
                   e.preventDefault();

@@ -8,6 +8,7 @@ import Hero from './sections/Hero';
 import Benefits from './sections/Benefits';
 import IngredientsSpotlight from './sections/IngredientsSpotlight';
 import Products from './sections/Products';
+import ComparisonTable from './sections/ComparisonTable';
 import DeliverySection from './sections/DeliverySection';
 import CoatHealth from './sections/CoatHealth';
 import Testimonials from './sections/Testimonials';
@@ -111,6 +112,7 @@ function App() {
         <Benefits />
         <IngredientsSpotlight />
         <Products />
+        <ComparisonTable />
         <DeliverySection />
         <CoatHealth />
         <Testimonials />

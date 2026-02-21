@@ -22,6 +22,7 @@ This repo now includes:
 - `public/robots.txt` pointing to canonical sitemap URL
 - IndexNow key file at `public/54bb180f2d54c9f46767bd867f4f6565.txt`
 - Automated post-deploy submission in `.github/workflows/deploy.yml`
+- Build-time prerendering of `/` in `vite.config.ts` so crawlers can read rendered HTML
 
 Manual one-time account steps still required:
 

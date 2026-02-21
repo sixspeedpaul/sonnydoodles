@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'Benefits', href: '#benefits' },
   { label: 'Ingredients', href: '#ingredients' },
   { label: 'Products', href: '#products' },
+  { label: 'Compare', href: '#comparison' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Must Haves', href: '#must-haves' },
