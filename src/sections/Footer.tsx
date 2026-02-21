@@ -50,7 +50,7 @@ export default function Footer() {
               height={900}
               loading="lazy"
               decoding="async"
-              className="h-14 md:h-16 w-auto brightness-0 invert"
+              className="h-14 md:h-16 w-auto rounded-full bg-white p-1 shadow-sm object-contain"
             />
             <div>
               <p className="font-bold text-white text-base md:text-lg">Sonny Doodles on Fifth</p>
