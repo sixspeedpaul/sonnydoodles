@@ -14,6 +14,27 @@ VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 
 If `VITE_GA_MEASUREMENT_ID` is missing, analytics stays disabled automatically.
 
+## Search indexing sweep
+
+This repo now includes:
+
+- `public/sitemap.xml` with canonical `https://www.sonnydoodles.com/`
+- `public/robots.txt` pointing to canonical sitemap URL
+- IndexNow key file at `public/54bb180f2d54c9f46767bd867f4f6565.txt`
+- Automated post-deploy submission in `.github/workflows/deploy.yml`
+
+Manual one-time account steps still required:
+
+1. Verify `https://www.sonnydoodles.com/` in Google Search Console and submit `https://www.sonnydoodles.com/sitemap.xml`.
+2. Use URL Inspection in Google Search Console to request indexing for `https://www.sonnydoodles.com/`.
+3. Verify `https://www.sonnydoodles.com/` in Bing Webmaster Tools and submit the same sitemap.
+
+Manual fallback command (if needed):
+
+```bash
+npm run indexnow:submit
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
