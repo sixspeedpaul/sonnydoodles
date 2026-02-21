@@ -87,7 +87,9 @@ export default function DeliverySection() {
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
           src="/images/doodle-sofa-close.jpg" 
-          alt="Goldendoodle on sofa"
+          alt="Goldendoodle on sofa waiting for home dog food delivery"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
       </div>
@@ -116,7 +118,7 @@ export default function DeliverySection() {
           ref={ctaRef}
           href="https://tlcpetfood.com/paw-partner/308725/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
           className="btn-primary group inline-flex mb-6"
         >
           Start Autoship

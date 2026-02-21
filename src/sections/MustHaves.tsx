@@ -232,14 +232,16 @@ export default function MustHaves() {
             key={idx}
             href={product.url}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="group bg-white rounded-2xl md:rounded-[24px] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1"
           >
             {/* Product Image */}
             <div className="relative aspect-square bg-[#F7F8F8] overflow-hidden">
               <img
                 src={product.image}
-                alt={product.name}
+                alt={`${product.name} for goldendoodle ${product.category.toLowerCase()} needs`}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
                   // Fallback if image fails to load

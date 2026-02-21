@@ -92,7 +92,9 @@ export default function IngredientsSpotlight() {
       <div ref={bgRef} className="absolute inset-0 w-full h-full">
         <img 
           src="/images/doodle-couch.jpg" 
-          alt="Goldendoodle on couch"
+          alt="Goldendoodle relaxing on a couch with healthy coat"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
       </div>
@@ -130,8 +132,10 @@ export default function IngredientsSpotlight() {
 
         {/* View Full Ingredients Button */}
         <button
+          type="button"
           onClick={() => setShowIngredients(true)}
           className="inline-flex items-center gap-2 text-sm font-medium text-[#4A7C59] hover:text-[#D8A94B] transition-colors"
+          aria-label="Open full TLC ingredient list"
         >
           <span>View full ingredient list</span>
           <ChevronDown className="w-4 h-4" />
@@ -154,8 +158,10 @@ export default function IngredientsSpotlight() {
           >
             {/* Close Button */}
             <button
+              type="button"
               onClick={() => setShowIngredients(false)}
               className="absolute top-4 right-4 w-10 h-10 rounded-full bg-[#F6F3EE] flex items-center justify-center hover:bg-[#E9E5DE] transition-colors"
+              aria-label="Close ingredient list"
             >
               <X className="w-5 h-5 text-[#2B2B2B]" />
             </button>

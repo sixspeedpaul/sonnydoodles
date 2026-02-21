@@ -11,6 +11,7 @@ import Products from './sections/Products';
 import DeliverySection from './sections/DeliverySection';
 import CoatHealth from './sections/CoatHealth';
 import Testimonials from './sections/Testimonials';
+import FAQ from './sections/FAQ';
 import MustHaves from './sections/MustHaves';
 import Footer from './sections/Footer';
 
@@ -79,6 +80,13 @@ function App() {
 
   return (
     <div className="relative">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[1000] focus:bg-white focus:text-[#2B2B2B] focus:px-4 focus:py-2 focus:rounded-full"
+      >
+        Skip to main content
+      </a>
+
       {/* Grain Overlay */}
       <div className="grain-overlay" />
       
@@ -98,7 +106,7 @@ function App() {
       <Navigation />
       
       {/* Main Content */}
-      <main className="relative">
+      <main id="main-content" className="relative">
         <Hero />
         <Benefits />
         <IngredientsSpotlight />
@@ -106,6 +114,7 @@ function App() {
         <DeliverySection />
         <CoatHealth />
         <Testimonials />
+        <FAQ />
         <MustHaves />
         <Footer />
       </main>

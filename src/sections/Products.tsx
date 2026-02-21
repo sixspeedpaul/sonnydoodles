@@ -9,8 +9,8 @@ const products = [
   {
     name: 'Whole Life Dog Food',
     subtitle: 'All Life Stages',
-    price: '$74.99',
-    priceNote: 'per 15kg bag',
+    price: '$73.95',
+    priceNote: '30 lb case (2 x 15 lb bags)',
     description: 'Complete nutrition for puppies, adults, and seniors.',
     features: [
       'Chicken & Lamb protein blend',
@@ -24,8 +24,8 @@ const products = [
   {
     name: 'Whole Life Puppy Food',
     subtitle: 'First 12 Months',
-    price: '$79.99',
-    priceNote: 'per 15kg bag',
+    price: '$73.95',
+    priceNote: '30 lb case (2 x 15 lb bags)',
     description: 'Higher protein and DHA for growing puppies.',
     features: [
       'Enhanced DHA for brain development',
@@ -37,19 +37,19 @@ const products = [
     image: '/images/dog-eating.jpg'
   },
   {
-    name: 'Grain-Free Formula',
-    subtitle: 'Sensitive Stomachs',
-    price: '$84.99',
-    priceNote: 'per 15kg bag',
-    description: 'Gentle on sensitive digestive systems.',
+    name: 'Whole Life Dog Biscuits',
+    subtitle: 'Training Treats',
+    price: '$30.95 - $64.95',
+    priceNote: '5 lb bag or 20 lb box',
+    description: 'Whole Life biscuits in two bulk size options for rewards and training.',
     features: [
-      'No corn, wheat, or soy',
-      'Single protein options',
-      'Limited ingredients',
-      'Hypoallergenic recipe',
+      '5 lb bag: $30.95',
+      '20 lb box: $64.95',
+      'Pairs well with autoship orders',
+      'Great for daily training rewards',
     ],
     popular: false,
-    image: '/images/doodle-blanket.jpg'
+    image: '/images/doodle-grass.jpg'
   },
 ];
 
@@ -166,7 +166,9 @@ export default function Products() {
             <div className="h-48 overflow-hidden">
               <img 
                 src={product.image} 
-                alt={product.name}
+                alt={`${product.name} premium TLC dog food formula`}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
@@ -203,7 +205,7 @@ export default function Products() {
               <a
                 href="https://tlcpetfood.com/paw-partner/308725/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 ${
                   product.popular 
                     ? 'bg-[#D8A94B] text-[#2B2B2B] hover:bg-[#c99a3d]' 
@@ -254,7 +256,7 @@ export default function Products() {
           <a
             href="https://tlcpetfood.com/paw-partner/308725/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-primary ml-0 sm:ml-4"
           >
             Start Shopping

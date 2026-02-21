@@ -115,7 +115,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-pinned z-10">
+    <section ref={sectionRef} id="home" className="section-pinned z-10">
       {/* Background Image */}
       <div 
         ref={bgRef}
@@ -124,7 +124,12 @@ export default function Hero() {
       >
         <img 
           src="/images/hero-goldendoodle.jpg" 
-          alt="Happy Goldendoodle"
+          alt="Goldendoodle outdoors with healthy coat, representing premium nutrition benefits"
+          width={1248}
+          height={832}
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient overlay for readability - stronger on mobile */}
@@ -145,10 +150,10 @@ export default function Hero() {
           {/* Headline */}
           <div ref={headlineRef} className="mb-3 md:mb-4">
             <h1 className="text-[clamp(32px,6vw,84px)] font-extrabold text-[#2B2B2B] leading-[0.95] tracking-[-0.02em]">
-              Happy doodles.
-            </h1>
-            <h1 className="text-[clamp(32px,6vw,84px)] font-extrabold text-[#2B2B2B] leading-[0.95] tracking-[-0.02em] mt-1 md:mt-2">
-              Better <span className="text-[#D8A94B]">poops.</span>
+              <span className="block">Happy doodles.</span>
+              <span className="block mt-1 md:mt-2">
+                Better <span className="text-[#D8A94B]">poops.</span>
+              </span>
             </h1>
           </div>
 
@@ -180,7 +185,7 @@ export default function Hero() {
             <a 
               href="https://tlcpetfood.com/paw-partner/308725/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-primary group justify-center sm:justify-start text-sm md:text-base py-3 md:py-4"
             >
               <Heart className="w-4 h-4 mr-2" />

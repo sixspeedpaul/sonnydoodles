@@ -5,7 +5,8 @@ const navLinks = [
   { label: 'Benefits', href: '#benefits' },
   { label: 'Ingredients', href: '#ingredients' },
   { label: 'Products', href: '#products' },
-  { label: 'Delivery', href: '#delivery' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'Must Haves', href: '#must-haves' },
 ];
 
@@ -35,6 +36,7 @@ export default function Navigation() {
     <>
       {/* Desktop Navigation */}
       <nav 
+        aria-label="Primary"
         className={`fixed top-0 left-0 right-0 z-[200] transition-all duration-500 ${
           isScrolled 
             ? 'bg-[#F6F3EE]/90 backdrop-blur-md shadow-sm' 
@@ -44,7 +46,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between px-3 md:px-[4vw] py-2.5 md:py-3">
           {/* Logo */}
           <a 
-            href="#"
+            href="#home"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -54,6 +56,9 @@ export default function Navigation() {
             <img 
               src="/images/logo.png" 
               alt="Sonny Doodles on Fifth"
+              width={900}
+              height={900}
+              fetchPriority="high"
               className="h-10 md:h-12 w-auto"
             />
             <span className={`font-bold text-sm md:text-lg transition-colors hidden sm:block ${isScrolled ? 'text-[#2B2B2B]' : 'text-[#2B2B2B]'}`}>
@@ -82,7 +87,7 @@ export default function Navigation() {
             <a
               href="https://tlcpetfood.com/paw-partner/308725/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="inline-flex items-center px-4 md:px-5 py-2 md:py-2.5 rounded-full text-sm font-semibold border-2 border-[#D8A94B] text-[#2B2B2B] hover:bg-[#D8A94B] transition-all duration-300"
             >
               Order TLC
@@ -114,6 +119,10 @@ export default function Navigation() {
           <img 
             src="/images/logo.png" 
             alt="Sonny Doodles on Fifth"
+            width={900}
+            height={900}
+            loading="lazy"
+            decoding="async"
             className="h-16 md:h-24 w-auto mb-2"
           />
           <p className="font-bold text-lg md:text-xl text-[#2B2B2B]">Sonny Doodles on Fifth</p>
@@ -132,7 +141,7 @@ export default function Navigation() {
           <a
             href="https://tlcpetfood.com/paw-partner/308725/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-primary mt-4"
             onClick={() => setIsMobileMenuOpen(false)}
           >

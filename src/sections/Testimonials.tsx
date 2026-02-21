@@ -91,7 +91,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative z-[80] bg-[#F6F3EE] py-[10vh] px-[8vw]">
+    <section ref={sectionRef} id="testimonials" className="relative z-[80] bg-[#F6F3EE] py-[10vh] px-[8vw]">
       {/* Heading */}
       <div ref={headingRef} className="text-center max-w-2xl mx-auto mb-12">
         <span className="inline-block px-4 py-2 bg-[#4A7C59]/20 rounded-full text-sm font-medium text-[#2B2B2B] mb-4">
@@ -128,9 +128,9 @@ export default function Testimonials() {
             </div>
             
             {/* Quote */}
-            <p className="text-[#2B2B2B] leading-relaxed mb-6 text-lg">
+            <blockquote className="text-[#2B2B2B] leading-relaxed mb-6 text-lg">
               "{testimonial.quote}"
-            </p>
+            </blockquote>
             
             {/* Author */}
             <div className="flex items-center gap-3">

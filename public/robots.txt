@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sonnydoodles.com/sitemap.xml
+Host: sonnydoodles.com

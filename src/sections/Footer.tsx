@@ -46,6 +46,10 @@ export default function Footer() {
             <img 
               src="/images/logo.png" 
               alt="Sonny Doodles on Fifth"
+              width={900}
+              height={900}
+              loading="lazy"
+              decoding="async"
               className="h-14 md:h-16 w-auto brightness-0 invert"
             />
             <div>
@@ -83,10 +87,30 @@ export default function Footer() {
               <a 
                 href="https://tlcpetfood.com/paw-partner/308725/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="text-xs md:text-sm text-white/60 hover:text-[#D8A94B] transition-colors"
               >
                 Order TLC Pet Food
+              </a>
+              <a
+                href="#testimonials"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="text-xs md:text-sm text-white/60 hover:text-[#D8A94B] transition-colors"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#faq"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="text-xs md:text-sm text-white/60 hover:text-[#D8A94B] transition-colors"
+              >
+                Goldendoodle FAQ
               </a>
               <a 
                 href="#must-haves"
